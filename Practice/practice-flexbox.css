@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  line-height: 1.4;
+}
+
+/* HEADER */
+
+.photo-shop {
+  width: 1200px;
+  height: auto;
+  border: 5px solid #fd96b6;
+
+  margin: 50px auto;
+  position: relative;
+}
+
+.header-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #fecdda;
+  border: 10px solid white;
+  border-radius: 15px;
+}
+
+.logo {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.name {
+  margin-right: 430px;
+  color: #525252;
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  /* 
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px; */
+
+  margin: 50px 50px;
+
+  color: #e11584;
+  text-transform: uppercase;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e11584;
+}
+
+/* ABOUT */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* background-color: red; */
+  gap: 10px;
+  margin: 10px 10px;
+  height: 350px;
+}
+
+article {
+  background-color: #fbe9e6;
+  flex: 0 0 200px;
+
+  margin-left: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside {
+  background-color: #f9f0ee;
+  flex: 1;
+
+  align-self: stretch;
+  border-radius: 10px;
+}
+
+.img {
+  margin: 20px 20px;
+}
+
+.museum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.random {
+  margin-right: 220px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.about {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  background-color: #fecdda;
+  border: 10px solid white;
+  border-radius: 15px;
+  height: 80px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 15px;
+  color: #525252;
+}

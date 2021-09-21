@@ -480,6 +480,10 @@
 
   > add some margin left into the right of container
 
+  ```
+    margin: 0 auto;
+  ```
+
 - CSS Theory #4: Types of Boxes
 
   > Inline Boxes - only occupies exactly the spaces that is needed for its content [single element] > ![](./img/theory4.1.png)
@@ -811,9 +815,19 @@
 
 #### Overview
 
-- ![](./img/webdesign.png)
-- ![](./img/webdesign1.png)
-- ![](./img/webdesign2.png)
+![](./img/webdesign.png)
+![](./img/webdesign1.png)
+![](./img/webdesign2.png)
+![](./img/webdesign3.png)
+![](./img/webdesign4.png)
+
+- Web Design Rules #1: TYPOGRAPHY
+
+  > "Typography is the art and technique of arranging type to make written language legible, readable and appealing when displayed" -Wikipedia
+
+  ![](./img/webdesign5.png)
+  ![](./img/webdesign6.png)
+  ![](./img/webdesign7.png)
 
 # Section 6: Components and Layouts
 

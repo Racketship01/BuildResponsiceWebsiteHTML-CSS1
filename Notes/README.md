@@ -821,6 +821,8 @@
 ![](./img/webdesign3.png)
 ![](./img/webdesign4.png)
 
+#### Ingredients
+
 - Web Design Rules #1: TYPOGRAPHY
 
   > "Typography is the art and technique of arranging type to make written language legible, readable and appealing when displayed" -Wikipedia
@@ -828,6 +830,59 @@
   ![](./img/webdesign5.png)
   ![](./img/webdesign6.png)
   ![](./img/webdesign7.png)
+  ![](./img/webdesign8.png)
+
+  ![](./img/webdesign11.png)
+
+- Implementing Typography
+
+  > use type scale and space scale system for better guidelines.
+
+  ```
+  font-size: 16px; (default)
+  letter-spacing: normal, 1px:
+  line-heigt: 1.5;
+  ```
+
+- Web Design Rules #2: COLORS
+  ![](./img/webdesign12.png)
+  ![](./img/webdesign13.png)
+  ![](./img/webdesign14.png)
+  ![](./img/webdesign15.png)
+  ![](./img/webdesign16.png)
+
+- Web Design Rules #3: IMAGES & ILLUSTRATIONS
+  ![](./img/webdesign17.png)
+  ![](./img/webdesign18.png)
+  ![](./img/webdesign19.png)
+  ![](./img/webdesign20.png)
+
+- Web Design Rules #4: ICONS
+  ![](./img/webdesign21.png)
+  ![](./img/webdesign22.png)
+  ![](./img/webdesign23.png)
+  ![](./img/webdesign24.png)
+  ![](./img/webdesign25.png)
+
+  ```
+  heroicons.com
+  ```
+
+- Web Design Rules #5: SHADOWS
+  ![](./img/shadow.png)
+  ![](./img/shadow1.png)
+  ![](./img/shadow2.png)
+  ![](./img/shadow3.png)
+
+- Web Design Rules #6: BORDER-RADIUS
+  ![](./img/br.png)
+  ![](./img/br1.png)
+
+- Web Design Rules #7: WHITESPACE
+  ![](./img/ws.png)
+  ![](./img/ws1.png)
+  ![](./img/ws2.png)
+  ![](./img/ws3.png)
 
 # Section 6: Components and Layouts
 

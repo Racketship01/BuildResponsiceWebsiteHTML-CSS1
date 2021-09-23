@@ -884,6 +884,70 @@
   ![](./img/ws2.png)
   ![](./img/ws3.png)
 
+- Web Design Rules #8: VISUAL HIERARCHY
+  ![](./img/vh.png)
+  ![](./img/vh1.png)
+  ![](./img/vh2.png)
+  ![](./img/vh3.png)
+
+- Web Design Rules #9: USER EXPERIENCE (UX)
+  ![](./img/ux.png)
+  ![](./img/ux1.png)
+  ![](./img/ux2.png)
+  ![](./img/ux3.png)
+  ![](./img/ux4.png)
+
+- Website Personalities Framework
+
+  > Website personality is basically like a general feeling or a vibe that we want the website transmit to our user and its also a feeling that we want to invoke in our users.
+
+  ![](./img/wp.png)
+  ![](./img/wp1.png)
+
+  - Serious/Elegant
+    ![](./img/elegant.png)
+    ![](./img/elegant1.png)
+
+  - Minimalist/Simple
+    ![](./img/minimal.png)
+    ![](./img/minimal1.png)
+
+  - Plain/Neutral
+    ![](./img/Palin.png)
+    ![](./img/Palin1.png)
+
+  - Bold/Confident
+    ![](./img/bold.png)
+    ![](./img/bold1.png)
+
+  - Calm/Peaceful
+    ![](./img/calm.png)
+    ![](./img/calm1.png)
+
+  - StartUP/Upbeat
+    ![](./img/upbeat.png)
+    ![](./img/upbeat1.png)
+
+  - Playful/Fun
+    ![](./img/fun.png)
+    ![](./img/fun1.png)
+
+  - Advanced: Combining Playfulness and Bold
+    ![](./img/combine.png)
+    ![](./img/combine1.png)
+    ![](./img/combine2.png)
+    ![](./img/combine3.png)
+
+  - The Missing Piece: Steal Like An Artist!
+    ```
+    Reference
+      - Land-book
+      - One Page Love
+      - Awwwards
+      - screenlane.com (individual component)
+    ```
+    ![](./img/artist.png)
+
 # Section 6: Components and Layouts
 
 # Section 7: Omnifood: Desktop

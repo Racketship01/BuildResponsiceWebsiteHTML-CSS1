@@ -950,6 +950,37 @@
 
 # Section 6: Components and Layouts
 
+- Web Design Rules #10: PART 1: ELEMENTS AND COMPONENTS
+  ![](./img/elements.png)
+  ![](./img/elements1.png)
+  ![](./img/elements2.png)
+
+  - Elements
+    ![](./img/text.png)
+    ![](./img/text1.png)
+    ![](./img/text2.png)
+    ![](./img/text3.png)
+    ![](./img/text4.png)
+  - Components
+    ![](./img/components.png)
+    ![](./img/components1.png)
+    ![](./img/components2.png)
+    ![](./img/components3.png)
+    ![](./img/components4.png)
+    ![](./img/components5.png)
+    ![](./img/components6.png)
+    ![](./img/components7.png)
+    ![](./img/components8.png)
+    ![](./img/components9.png)
+    ![](./img/components10.png)
+    ![](./img/components11.png)
+    ![](./img/components12.png)
+    ![](./img/components13.png)
+    ![](./img/components14.png)
+    ![](./img/components15.png)
+    ![](./img/components16.png)
+    ![](./img/components17.png)
+
 # Section 7: Omnifood: Desktop
 
 # Section 8: Omnifood: Responsive

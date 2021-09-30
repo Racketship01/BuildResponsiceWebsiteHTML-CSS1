@@ -981,6 +981,82 @@
     ![](./img/components16.png)
     ![](./img/components17.png)
 
+  - Accordion
+    ![](./img/accordion.png)
+
+  - Carousel Component
+
+    ```
+      using transform property to align elements outside of a container (using combination of absolute positioning and transform translate)
+
+      .dots {
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
+      }
+
+      --------------------------------------
+      also can be use in centering components
+
+      .header-container {
+        width: 1200px;
+
+        position: absolute;
+        /* right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%); */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: orchid;
+      }
+
+    ```
+
+    ![](./img/carousel.png)
+
+  - Table Component
+
+    ```
+    <table>
+      <tr>
+        <td></td>
+      </tr>
+      ----------------
+       <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+    ```
+
+  - Web Design Rules #10: PART 2: LAYOUT PATTERNS
+
+    - Section Components
+      ![](./img/navigation.png)
+      ![](./img/navigation1.png)
+
+      ![](./img/hero.png)
+      ![](./img/footer.png)
+      ![](./img/cac.png)
+      ![](./img/feauture-row.png)
+
+    - Patterns
+      ![](./img/pattern.png)
+      ![](./img/pattern1.png)
+      ![](./img/pattern2.png)
+      ![](./img/pattern3.png)
+      ![](./img/pattern4.png)
+      ![](./img/pattern5.png)
+      ![](./img/pattern6.png)
+      ![](./img/pattern7.png)
+      ![](./img/pattern8.png)
+
 # Section 7: Omnifood: Desktop
 
 # Section 8: Omnifood: Responsive

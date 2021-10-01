@@ -32,19 +32,30 @@
       }
 
       header {
-        background-color: orangered;
         height: 100vh;
 
         position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+
+        color: #fff;
       }
+
       nav {
         font-size: 20px;
         font-weight: 700;
 
+        padding-top: 32px;
+
         display: flex;
         justify-content: space-between;
 
-        background-color: green;
+        /* background-image: linear-gradient(to right, red, blue); */
       }
 
       .header-container {
@@ -54,15 +65,22 @@
         /* right: 50%;
         bottom: 50%;
         transform: translate(50%, 50%); */
+
+        /* In relation to parent size */
         left: 50%;
         top: 50%;
+        /* In relation to element size */
         transform: translate(-50%, -50%);
-        background-color: orchid;
+      }
+
+      .header-container-inner {
+        width: 50%;
       }
 
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
 
       p {
@@ -84,10 +102,6 @@
         border-radius: 9px;
       }
 
-      .btn:hover,
-      .btn:active {
-      }
-
       h2 {
         font-size: 44px;
         margin-bottom: 48px;
@@ -107,12 +121,14 @@
       </nav>
 
       <div class="header-container">
-        <h1>A healthy meal delivered to your door, every single day</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healthy again. Tailed to your personal tastes and nutrional needs.
-        </p>
-        <a href="#" class="btn">Start eating well </a>
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailed to your personal tastes and nutrional needs.
+          </p>
+          <a href="#" class="btn">Start eating well </a>
+        </div>
       </div>
     </header>
 

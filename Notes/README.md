@@ -749,6 +749,13 @@
   > if there is not enough space in a container
   > to fit the items with the size that we described here using flex basis,then Flexbox is allowed to shrink these items by default because flex shrink is set to one.However, if we want to change that,which sometimes we might want,then we can simply set this to zero.
 
+  > can use flex-direction to align items verticallyy -- can also change to change the main axis and cross axis
+
+  ```
+    flex-direction: column; ---- vertically
+    flex-direction: row;  ------ horizontally
+  ```
+
 - Introduction to CSS Grid
 
   > the most modern way of building layouts and also the most complete one.
@@ -1057,7 +1064,70 @@
       ![](./img/pattern7.png)
       ![](./img/pattern8.png)
 
+    - Hero Component
+
+    ```
+      header {
+        height: 100vh;
+
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+
+        color: #fff;
+      }
+
+    ```
+
+    -Building a Web Application Layout - Part 1
+
+    > Navigation Element (nav bar) - contains bunch of links which which then points to other places in the application.
+
+    > Menu - actually for like menu buttons in an actual web application.
+
+    > can use margin-left: auto; for the last element to expand to other side
+
+    ```
+      margin-left: auto;
+      *for the last element to expand to other side
+
+      -----------------------------------------
+
+      overflow: scroll;
+      *use to nake a scroll bar
+    ```
+
 # Section 7: Omnifood: Desktop
+
+#### Overview
+
+- The 7 Steps to a Great Website
+
+  > Define
+  > ![](./img/define.png)
+
+  > Plan
+  > ![](./img/plan.png)
+
+  > Sketch
+  > ![](./img/sketch.png)
+
+  > Design and Build
+  > ![](./img/design.png)
+
+  > Test and Optimize
+  > ![](./img/test.png)
+
+  > Launch
+  > ![](./img/launch.png)
+
+  > Maintain and Update
+  > ![](./img/maintain.png)
 
 # Section 8: Omnifood: Responsive
 

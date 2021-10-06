@@ -864,6 +864,10 @@
   ![](./img/webdesign19.png)
   ![](./img/webdesign20.png)
 
+  ```
+    unsplash.com
+  ```
+
 - Web Design Rules #4: ICONS
   ![](./img/webdesign21.png)
   ![](./img/webdesign22.png)
@@ -1128,6 +1132,99 @@
 
   > Maintain and Update
   > ![](./img/maintain.png)
+
+- Defining and Planning the Project Omnifood (STEPS 1 & 2)
+
+  > ![](./img/omnifoof.png)
+
+  > ![](./img/omnifoof1.png)
+
+  > ![](./img/omnifoof2.png)
+
+- Sketching Initial Layout Idead (STEP 3)
+
+  > ![](./img/sketching.png)
+
+- First Design and Development Steps (STEP 4)
+
+  > make a design system firts to have a consistent webpage
+
+  ```
+        /*
+    ----01 TYPOGRAPHY SYSTEM
+
+    Font Weights:
+    Deafult: 400
+
+    Line Heights:
+    Default: 1
+
+
+    FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    -----02 COLORS
+
+    - Primary: #e67e22
+    - Tints:
+    - Shades:
+    - Accent:
+    - Greys:
+        #555
+
+    -----03 SHADOWS
+
+
+    ------04 BORDER-RADIUS
+
+    ------05 WHITESPACE
+    SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+        */
+  ```
+
+  - Responsive Design Principles
+
+    > ![](./img/responsive.png)
+
+    > ![](./img/responsive1.png)
+
+    > ![](./img/responsive2.png)
+
+  - How Rem Unit and Max-Width Property works
+
+    - Max-width
+
+      > if the container width is larger than the specified max-width, then the width of the element is equal the value that was specified for max-width. However, if the container width is less than the specified max width, then the width of the element will be 100% of the container element width.
+
+      ```
+        max-width: 1000px;
+        ------------------
+
+
+      ```
+
+    - Rem - is the root elements font-size
+
+      > the root of the document is the HTML elements (basically the parent element of all the others)
+
+      > if we dont define any font size on the HTML element(root element), then one rem is simply equal to the default browser font-size (16px)
+
+      ```
+         max-width: 50rem;
+         padding: 4rem;
+         font-size: 2rem;
+        /* 1 rem = 16px  -> 50rem x 16px = 800 */-----------------------------------
+        /* 1 rem = 10px */
+
+         html {
+        /* font-size: 10px; */
+
+        /* 10 / 16 = 0.625 = 62.5% */
+        /* Percentage of user's browser font-size setting.  */
+        font-size: 62.5%;
+        }
+      ```
 
 # Section 8: Omnifood: Responsive
 

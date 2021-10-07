@@ -858,6 +858,13 @@
   ![](./img/webdesign15.png)
   ![](./img/webdesign16.png)
 
+  ```
+    open-colors.cpm
+    coolors
+    tint and shades generator
+
+  ```
+
 - Web Design Rules #3: IMAGES & ILLUSTRATIONS
   ![](./img/webdesign17.png)
   ![](./img/webdesign18.png)
@@ -877,6 +884,7 @@
 
   ```
   heroicons.com
+  uifaces.com
   ```
 
 - Web Design Rules #5: SHADOWS

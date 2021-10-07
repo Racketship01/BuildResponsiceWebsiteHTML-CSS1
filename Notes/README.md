@@ -1234,6 +1234,8 @@
         }
       ```
 
+    - Max width
+
 # Section 8: Omnifood: Responsive
 
 # Section 9: Omnifood: Optimazations

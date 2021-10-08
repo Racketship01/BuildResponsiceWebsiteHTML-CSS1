@@ -37,6 +37,9 @@ FONT SIZE SYSTEM (px)
 
 ------04 BORDER-RADIUS
     default: 9px
+            11px
+
+
 ------05 WHITESPACE
 SPACING SYSTEM (px)
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -83,9 +86,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* .grid--3-cols {
-        grid-template-columns: repeat(3, 1fr);
-      } */
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .grid--center-v {
   align-items: center;
@@ -137,7 +140,7 @@ body {
   border-radius: 9px;
 
   /* Put transition on original "state" */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -167,6 +170,37 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  cursor: pointer;
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER CLASSES */
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }

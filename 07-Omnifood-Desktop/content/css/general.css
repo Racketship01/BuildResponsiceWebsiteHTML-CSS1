@@ -26,11 +26,13 @@ FONT SIZE SYSTEM (px)
 
 - Primary: #e67e22
 - Tints: #fdf2e9 , #fae5d3, #eb984e
-- Shades: #cf711f
+- Shades: #cf711f , #45260a
 - Accent: 
-- Greys: 
+- Greys:
+    #888 
     #555
     #333
+    #767676 (lightest gray allowed on #fff)
     #6f6f6f (lightest gray allowed on #fdf2e9)
 
 -----03 SHADOWS
@@ -103,6 +105,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -143,6 +149,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -154,6 +161,10 @@ body {
 
   /* Put transition on original "state" */
   transition: all 0.3s;
+
+  /* btn for cta */
+  border: none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -181,6 +192,18 @@ body {
 
   /* Trick to add border inside button - put inset keyword */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -218,6 +241,13 @@ body {
   color: #e67e22;
   width: 3rem;
   height: 3rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px solid #eb984e;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER CLASSES */

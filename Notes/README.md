@@ -1238,4 +1238,16 @@
 
 # Section 8: Omnifood: Responsive
 
+- How Media Queries Work
+
+  > ![](./img/mediaQ.png)
+
+- How to Select Breakpoints
+
+  > ![](./img/mediaQ1.png)
+
+  > rem and em do NOT depend on html font-size in media queries
+
+  > Instead, 1rem = 1em = 16px
+
 # Section 9: Omnifood: Optimazations

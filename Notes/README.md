@@ -1234,7 +1234,10 @@
         }
       ```
 
-    - Max width
+    - After declaring font-size in html element, always divide in px to get the rem
+      ```
+        10 / 1200px = 120rem
+      ```
 
 # Section 8: Omnifood: Responsive
 
@@ -1249,5 +1252,7 @@
   > rem and em do NOT depend on html font-size in media queries
 
   > Instead, 1rem = 1em = 16px
+
+  > we use em in media queries instead of rem because some browser has a bug in rem
 
 # Section 9: Omnifood: Optimazations

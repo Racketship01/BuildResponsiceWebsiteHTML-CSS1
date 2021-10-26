@@ -1256,3 +1256,47 @@
   > we use em in media queries instead of rem because some browser has a bug in rem
 
 # Section 9: Omnifood: Optimazations
+
+#### Overview
+
+- Basic Java Introduction
+
+  > Variables
+
+  ```
+    const myName = 'Racket ship';
+    ---------
+    variable - myName
+    value - Racket ship
+  ```
+
+  > Functions - basically reusable pieces of code that we can define somewhere else and use them.
+
+  ```
+  e.g
+   document.querySelector
+   h1.addEventListener()
+  ---------------------
+
+  h1.addEventListener("click", function () {
+  h1.textContent = myName;
+  h1.style.backgroundColor = "red";
+  h1.style.padding = "5rem";
+  });
+  --------------------------
+  // Js for currentyear in copyright TRICK
+    const yearEl = document.querySelector(".year");
+    const currentYear = new Date().getFullYear();
+    yearEl.textContent = currentYear;
+  ------------------------------
+  // Make mobile navigation work
+    const btnNavEl = document.querySelector(".btn-mobile-nav");
+    const headerEl = document.querySelector(".header");
+
+    btnNavEl.addEventListener("click", function () {
+      headerEl.classList.toggle("nav-open");
+    });
+
+    **Note: So what toggle will do is it will look at this element here. And if it does have this nav-open class it will then not add it. So if it's already there it will remove it. But if it's not there then it will add it.
+
+  ```

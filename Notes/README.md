@@ -1397,7 +1397,9 @@
 
   - Deploy in Netflify
 
-    ```
-      https://omnifood-racketship09.netlify.app/
+        ```
+          https://omnifood-racketship09.netlify.app/
 
-    ```
+        ```
+
+    ![](./img/togo.png)

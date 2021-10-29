@@ -29,6 +29,63 @@ btnNavEl.addEventListener("click", function () {
 
 ////////////////////////////////////////////////
 // Smooth Scrolling  animation
+//  **Note: *addEventListener - for single element only *forEach - for all or many elements
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
+
+///////////////////////////////////////////////////////////
+// Sticky Navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    // entries - array of entries. one entries for each threshold value. basically we have one that why its zero
+    // The element number one is called number zero in JS
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    // root - basically simply where this element should appear or not [inside te vw]
+    // threshold - means that we will have like an event as soon as 0% of the hero section is inside of the viewport [we want to get an event as soon as the hero section moves out completely of the vw]
+
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -51,6 +108,7 @@ function checkFlexGap() {
 checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+// polyfill - basically JS library which implements this functionality for Safari
 
 /*
 .no-flexbox-gap .main-nav-list li:not(:last-child) {

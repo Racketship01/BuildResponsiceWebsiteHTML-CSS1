@@ -1247,7 +1247,7 @@
 
 - How to Select Breakpoints
 
-  > ![](./img/mediaQ1.png)
+  > ![](./img/mediaQ1.png)![](./img/mediaQ1.png)
 
   > rem and em do NOT depend on html font-size in media queries
 
@@ -1283,6 +1283,10 @@
   h1.style.backgroundColor = "red";
   h1.style.padding = "5rem";
   });
+
+  **Note:
+      addEventListener - for single element only
+      forEach - for all or many elements
   --------------------------
   // Js for currentyear in copyright TRICK
     const yearEl = document.querySelector(".year");
@@ -1298,5 +1302,102 @@
     });
 
     **Note: So what toggle will do is it will look at this element here. And if it does have this nav-open class it will then not add it. So if it's already there it will remove it. But if it's not there then it will add it.
+  ---------------------------------
+  // Sticky Navigation
+    const sectionHeroEl = document.querySelector(".section-hero");
+
+    const obs = new IntersectionObserver(
+      function (entries) {
+        // entries - array of entries. one entries for each threshold value. basically we have one that why its zero
+        // The element number one is called number zero in JS
+        const ent = entries[0];
+        console.log(ent);
+
+        if (ent.isIntersecting === false) {
+          document.body.classList.add("sticky");
+        }
+
+        if (ent.isIntersecting === true) {
+          document.body.classList.remove("sticky");
+        }
+      },
+      {
+        // In the viewport
+        // root - basically simply where this element should appear or not [inside te vw]
+        // threshold - means that we will have like an event as soon as 0% of the hero section is inside of the viewport [we want to get an event as soon as the hero section moves out completely of the vw]
+
+        root: null,
+        threshold: 0,
+        rootMargin: "-80px",
+      }
+    );
+    obs.observe(sectionHeroEl);
 
   ```
+
+  - Step 5: Test and Optimize
+    ![](./img/optimize.png)
+
+    > caniuse.com - use to check browser if modern css properties works.
+
+    > always add this js code especially fixing flexbox gap property missing in some Safari versions
+
+    ```
+      function checkFlexGap() {
+      var flex = document.createElement("div");
+      flex.style.display = "flex";
+      flex.style.flexDirection = "column";
+      flex.style.rowGap = "1px";
+
+      flex.appendChild(document.createElement("div"));
+      flex.appendChild(document.createElement("div"));
+
+      document.body.appendChild(flex);
+      var isSupported = flex.scrollHeight === 1;
+      flex.parentNode.removeChild(flex);
+      console.log(isSupported);
+
+      if (!isSupported) document.body.classList.add("no-flexbox-gap");
+      }
+      checkFlexGap();
+    ```
+
+  - Optimazation of Image
+
+    > Actual image size (image file itself) should always be double of the size that is actually displayed on the screen
+
+    > the reason why we need an image to double size that is actually displayed on the screen is that high density screen actually need 2px of the image to display one pixel in the design
+
+    ```
+    Process : 1st Step Optimization (Image Dimension)
+
+    1- Start with really big image (like a thousands px)
+    2- Finish the design and check the largest image
+    3- Resize the image by double the size
+
+    Tip :
+    use squoosh.com to compress large file size img
+    ```
+
+    ```
+      Tricks how we can use a high-performing image like webP (browser not recognizing compress imgs)
+
+        <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
+
+    ```
+
+  - Deploy in Netflify
+
+    ```
+      https://omnifood-racketship09.netlify.app/
+
+    ```
